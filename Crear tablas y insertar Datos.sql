@@ -4,6 +4,7 @@ CREATE TABLE libros(
 	cantidad INT,
 	disponibles INT
 );
+INSERT INTO libros(idLibros, nombre	, cantidad, disponibles) VALUES('1-B', 'El Alquimista', 10, 8);
 
 CREATE TABLE clientes(
 	idcliente VARCHAR(10) PRIMARY KEY,
@@ -11,10 +12,10 @@ CREATE TABLE clientes(
 	edad INT,
 	direccion VARCHAR(100),
 	idLibros VARCHAR(10) FOREIGN KEY REFERENCES libros(idLibros)
-)
+);
 
 INSERT INTO clientes(idcliente, nombre, edad, direccion, idLibros) VALUES('2-A', 'Thanos Snachez', 50, 'calle k', '1-B')
-INSERT INTO libros(idLibros, nombre	, cantidad, disponibles) VALUES('1-B', 'El Alquimista', 10, 8)
+
 
 --SELECT*FROM libros
 --SELECT*FROM clientes
