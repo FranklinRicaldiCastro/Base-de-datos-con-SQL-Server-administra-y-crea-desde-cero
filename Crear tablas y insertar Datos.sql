@@ -2,8 +2,8 @@ CREATE TABLE libros(
 	idLibros VARCHAR (10) PRIMARY KEY,
 	nombre VARCHAR (100),
 	cantidad INT,
-	disponibles INT,
-)
+	disponibles INT
+);
 
 CREATE TABLE clientes(
 	idcliente VARCHAR(10) PRIMARY KEY,
